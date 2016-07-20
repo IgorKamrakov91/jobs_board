@@ -1,0 +1,9 @@
+= simple_form_for(@job, html: {class: "col-xs-4"}) do |f|
+  = f.input :title, label: "Job Title"
+  = f.input :description, label: "Job Description"
+  = f.input :company, label: "Your Company"
+  = f.input :url, label: "Link to Job"
+  %br/
+
+  = f.button :submit, class: 'btn btn-default'
+  = link_to "Back", root_path, class: "btn btn-default"
